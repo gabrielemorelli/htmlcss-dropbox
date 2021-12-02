@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: ;
+}
+
+.container{
+    margin: 0 auto;
+width: 100%;
+}
+
+header{
+    background-color: blue;
+    height: 100px;
+    line-height: 100px;
+}
+
+.jumbatron{
+background-color: brown;
+height: 600px;
+
+}
+.container-2{
+    width: 80%;
+    margin: 0 auto;
+}
+.pagina-1{
+    background-color: chartreuse;
+    height: 600px;
+}
+
+.pagina-2{
+    background-color: coral;
+    height: 600px;
+}
+.pagina-3{
+    background-color: darkgreen;
+    height: 600px;
+}
+.quadrati{
+    background-color: darkorchid;
+    height: 600px;
+}
+
+.domande-frequenti{
+    background-color: dimgray;
+    height: 600px;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+margin: 0 auto;
+}
