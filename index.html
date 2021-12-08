@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -10,79 +11,458 @@
     <title>Document</title>
 </head>
 
+
 <body>
+
+    <!--header-->
     <header>
 
-        <div class="row">
-            <div id="logo">
-                <img src="img/logo-small.png" alt="logo">
-            </div>
-            <nav>
+        <div id="fixed">
+            <!--inizio nav 1-->
+            <nav class="menu-1">
                 <ul>
+                    <li><img src="img/logo-small.png" alt="logo"> </li>
                     <li> <a href="#">Perchè dropox</a></li>
                     <li> <a href="#">Funzioni</a></li>
                     <li> <a href="#">Piani e prezzi</a></li>
                 </ul>
-
             </nav>
-
-            <nav id="right">
+            <!--fine nav 1-->
+            <!--inizio nav 2-->
+            <nav class="menu-2">
                 <ul>
                     <li> <a href="#">Perchè dropox</a></li>
                     <li> <a href="#">Funzioni</a></li>
                     <li> <a href="#">Piani e prezzi</a></li>
+                    <a class="btn btn-header" href="">Inizia</a>
                 </ul>
-
             </nav>
-
-            <div id="login">
-                <a class="btn" href="">Accedi</a>
-            </div>
+            <!--fine nav 2-->
         </div>
-        
-
 
     </header>
+    <!--fine header-->
 
-    <div class="container">
-        <section class="jumbatron">
+    <!--inizio jumbo-->
+    <section class="jumbo">
+        <div id="jumbotron">
+            <h1>Tutto ciò che ti serve per il lavoro, in unico posto </h1>
+            <div class="row">
+                <div class="col-sx text>">
+                    <p>Finalmente tutti i suoi strumenti contenuti e collaboratori sono accesibili dallo stesso.
+                        dropox busines è più di uno spazio di archivazione sicuro: è un modo intelligente e integrato
+                        per ottimizzare il flusso di lavoro esistenti
+                    </p>
+                    <a class="btn btn-jumbo" href="">Inizia la tua prova gratuita</a>
+                    <p>Annulla in qualsiasi momento</p>
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="col-dx">
+                    <img src="img/jumbo.png" alt="grande immagine">
+
+                </div>
+            </div>
+        </div>
+        <!--fine jumbo-->
+    </section>
+    <!--inizio main-->
+    <main>
+        <!--inizio section piani-->
+        <section id="piani">
+            <div class="container-center">
+                <div class="title-section">
+                    <h2>Trova il piano Dropbox Business che fa per te</h2>
+                </div>
+                <div id="fatturazione">
+                    <div class="circle blue"></div>
+                    <div>Fatturazione mensile</div>
+                    <div class="circle black"></div>
+                    <div>Fatturazione annuale</div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        <div id="col-title">Singolo</div>
+                        <div id="col-piano">
+                            <h3>Professional</h3>
+                            <div id="costo">19,99 €</div>
+                            <div id="mese">/mese</div>
+                        </div>
+                        <div id="col-desc">
+                            <div> 1 utente</div>
+                            <div> 3 TB di spazio di archiviazione sicuro</div>
+
+                            <p>Funzioni di produttività premium e condivisone file semplice e sicura</p>
+                            <div class="scelta">
+                                <a class="btn btn-col" href=""> Prova gratis per 30 giorni</a>
+                                <div> oppure <span id="acquista"> acquista ora</span>
+                                </div>
+                            </div>
+
+                            <hr>
+                        </div>
+
+
+                        <div id="col-puntisal">
+                            <h4>Punti salienti del piano</h4>
+
+                            <p>Invia file fino a 100 gb con dropbox transfert</p>
+                            <p>cartelle offline su dispositivi mobili</p>
+                            <p>Pulizia remota dell'account</p>
+                            <p>Filigrana documento</p>
+                            <p>Assistenza priorità vai email e chat</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col col-center">
+                        <div id="col-title"> team</div>
+                        <div id="col-piano">
+                            <h3>Standard</h3>
+                            <div id="costo">19,99 €</div>
+                            <div id="mese">/mese</div>
+                        </div>
+                        <div id="col-desc">
+                            <div> 1 utente</div>
+                            <div> 3 TB di spazio di archiviazione sicuro</div>
+
+                            <p>Funzioni di produttività premium e condivisone file semplice e sicura</p>
+                            <div class="scelta">
+                                <a class="btn btn-col" href=""> Prova gratis per 30 giorni</a>
+                                <div> oppure <span id="acquista"> acquista ora</span>
+                                </div>
+                            </div>
+
+                            <hr>
+                        </div>
+
+
+                        <div id="col-puntisal">
+                            <h4>Punti salienti del piano</h4>
+
+                            <p>Invia file fino a 100 gb con dropbox transfert</p>
+                            <p>cartelle offline su dispositivi mobili</p>
+                            <p>Pulizia remota dell'account</p>
+                            <p>Filigrana documento</p>
+                            <p>Assistenza priorità vai email e chat</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div id="col-title"> team</div>
+                        <div id="col-piano">
+                            <h3>Advanced</h3>
+                            <div id="costo">19,99 €</div>
+                            <div id="mese">/mese</div>
+                        </div>
+                        <div id="col-desc">
+                            <div> 1 utente</div>
+                            <div> 3 TB di spazio di archiviazione sicuro</div>
+
+                            <p>Funzioni di produttività premium e condivisone file semplice e sicura</p>
+                            <div class="scelta">
+                                <a class="btn btn-col" href=""> Prova gratis per 30 giorni</a>
+                                <div> oppure <span id="acquista"> acquista ora</span>
+                                </div>
+                            </div>
+
+                            <hr>
+                        </div>
+
+
+                        <div id="col-puntisal">
+                            <h4>Punti salienti del piano</h4>
+
+                            <p>Invia file fino a 100 gb con dropbox transfert</p>
+                            <p>cartelle offline su dispositivi mobili</p>
+                            <p>Pulizia remota dell'account</p>
+                            <p>Filigrana documento</p>
+                            <p>Assistenza priorità vai email e chat</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-enterprise">
+                        <div id="col-title"> Team</div>
+
+                        <div id="col-ent1">
+                            <h2>Enterprise</h2>
+                            <h3>Contatta l'ufficio vendite per i prezzi</h3>
+                            <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella
+                                gestione su qualsiasi scala </p>
+                        </div>
+                        <div id="col-ent2">
+                            <a class="btn" href="">Contatta l'ufficio vendite</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
 
         </section>
-    </div>
+        <!--fine section piani-->
+        <!--inizio section partners-->
 
-    <main>
-        <div class="container-2">
-            <section class="pagina-1">
 
-            </section>
+        <section id="partners">
+            <div class="container-center">
+                <div class="row">
+                    <div class="col-partners">
+                        <img src="img/partner.png" alt="">
+                    </div>
 
-            <section class="pagina-2">
+                    <div class="col-text">
+                        <h2>Entra in contatto con un partner Dropbox</h2>
+                        <p>Trova un partner Dropox e Hellosign di fiducia.Ottieni le soluzioni e i servizi necessari per
+                            raggiungere i tuoi obiettivi aziendali tra cui implentazione,integrazione e gestione
+                            continue. </p>
 
-            </section>
+                        <a class="btn-partners" href="">Trova un partner</a>
 
-            <section class="pagina-3">
 
-            </section>
+                    </div>
+                </div>
+            </div>
 
-        </div>
+        </section>
 
-        <div class="container">
-            <section class="quadrati">
+        <section id="operazioni">
+            <div class="container-center">
 
-            </section>
+                <div class="row">
+                    <div class="title-section">
+                        <h2>Esegui più operazioni con Dropbox Business</h2>
+                    </div>
 
-        </div>
+                    <div class="col">
+                        <img src="img/business-feature-switching-tools.png" alt="">
+                        <h3>Passa di meno da uno all altro strumento</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque mollitia nisi iusto
+                            voluptas, dolorum in temporibus aut aliquid quidem amet quam, quia itaque eum architecto
+                            quae saepe reprehenderit. Dolorum, doloremque.</p>
+                    </div>
 
-        <div class="container">
-            <section class="domande-frequenti">
+                    <div class="col-center">
+                        <img src="img/business-feature-send-files-it.png" alt="">
+                        <h3>Passa di meno da uno all altro strumento</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem recusandae alias ad vitae
+                            vel? Velit id nostrum quam accusantium magnam? Commodi corrupti assumenda voluptas minus
+                            officia ullam nisi hic quisquam!</p>
+                    </div>
 
-            </section>
-        </div>
+                    <div class="col">
+                        <img src="img/business-feature-security.png" alt="">
+                        <h3>Passa di meno da uno all altro strumento</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab quidem, asperiores neque
+                            eius facilis quam velit dicta possimus? Adipisci soluta fuga odit quidem unde? Placeat,
+                            eaque suscipit? Perferendis, consequuntur!</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="img/business-feature-multi-device.png" alt="">
+                        <h3>Passa di meno da uno all altro strumento</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab maxime repellat laborum corporis
+                            consequatur itaque quibusdam atque, possimus exercitationem dicta, voluptatem quia in,
+                            quaerat explicabo! Molestiae similique accusamus aliquid asperiores!</p>
+                    </div>
+
+                    <div class="col-center">
+                        <img src="img/business-feature-integrations-it.png" alt="">
+                        <h3>Passa di meno da uno all altro strumento</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus minus, illum
+                            praesentium tenetur quae consequuntur vitae? Quam, iusto praesentium deserunt sequi repellat
+                            molestiae modi obcaecati molestias commodi beatae placeat eligendi!</p>
+                    </div>
+
+                    <div class="col">
+                        <img src="img/business-feature-coordinate-it.png" alt="">
+                        <h3>Passa di meno da uno all altro strumento</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste tempore ratione dolorem
+                            at asperiores maiores obcaecati earum modi ducimus, rerum sed expedita voluptatibus eligendi
+                            deleniti libero nemo nesciunt excepturi.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clienti">
+            <div class="container-center">
+                <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
+                <a href="#">Scopri di più sui nostri clienti</a>
+            </div>
+            <div class="container-clienti">
+                <div class="row">
+                    <div class="col-side">
+                        <div class="quadrato quadrato-1">
+                            <img src="img/designit.svg" alt="">
+                        </div>
+                        <div class="quadrato quadrato-2">
+                            <img src="img/arizona_state_university.svg" alt="">
+                        </div>
+                        <div class="quadrato quadrato-3">
+                            <img src="img/university_of_florida.svg" alt="">
+                        </div>
+                        <div class="quadrato quadrato-4">
+                            <img src="img/topps.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="side-center">
+
+                        <div class="riga">
+                            <img src="img/designit.svg" alt="logo">
+                            <hr>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quibusdam quia ex
+                                dolores
+                                aut magni, exercitationem sed ab perspiciatis architecto aliquam veniam fuga sit
+                                consequuntur rem sequi nam optio itaque!</p>
+                            <div> Morten Thomsen,Global it lead</div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-side">
+                        <div class="quadrato quadrato-5">
+                            <img src="img/world_bicycle_relief.svg" alt="">
+                        </div>
+                        <div class="quadrato quadrato-6">
+                            <img src="img/hearst_corp.svg" alt="">
+                        </div>
+                        <div class="quadrato quadrato-7">
+                            <img src="img/lonely_planet.svg" alt="">
+                        </div>
+                        <div class="quadrato quadrato-8">
+                            <img src="img/clear_channel.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="inizia">
+            <div class="container-center">
+                <div class="row">
+                    <div class="col-i">
+                        <div>Porta Dropbox Business nella tua azienda</div>
+                    </div>
+
+                    <div class="col-inizia">
+                        <a class="btn btn-inizia" href="">Inizia la tua prova gratuita</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="container-center">
+                <h1>Domande frequenti</h1>
+                <ul>
+                    <hr>
+                    <li>Qualè la differenza tra dropox standard e dropbox advanced?</li>
+                    <hr>
+                    <li>Qualè la differenza tra dropox standard e dropbox advanced?</li>
+                    <hr>
+                    <li>Qualè la differenza tra dropox standard e dropbox advanced?</li>
+                    <hr>
+                    <li>Qualè la differenza tra dropox standard e dropbox advanced?</li>
+                    <hr>
+                </ul>
+            </div>
+        </section>
 
     </main>
 
     <footer>
+        <div class="container-footer">
+            <div class="row">
+                <div class="col-faq ">
+                    <div id="col-titlefaq"> Dropox</div>
+
+                    <ul>
+                        <li>Applicazione destkop</li>
+                        <li>perchè dropbox</li>
+                        <li>piani</li>
+                        <li>sicurezza</li>
+                        <li>funzioni</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-faq">
+                    <div id="col-titlefaq"> Dropox</div>
+                    <ul>
+                        <li>Applicazione destkop</li>
+                        <li>perchè dropbox</li>
+                        <li>piani</li>
+                        <li>sicurezza</li>
+                        <li>funzioni</li>
+                    </ul>
+                </div>
+
+                <div class="col-faq">
+                    <div id="col-titlefaq"> Dropox</div>
+                    <ul>
+                        <li>Applicazione destkop</li>
+                        <li>perchè dropbox</li>
+                        <li>piani</li>
+                        <li>sicurezza</li>
+                        <li>funzioni</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-faq">
+                    <div id="col-titlefaq"> Dropox</div>
+                    <ul>
+                        <li>Applicazione destkop</li>
+                        <li>perchè dropbox</li>
+                        <li>piani</li>
+                        <li>sicurezza</li>
+                        <li>funzioni</li>
+                    </ul>
+                </div>
+
+                <div class="col-faq">
+                    <div id="col-titlefaq"> Dropox</div>
+                    <ul>
+                        <li>Applicazione destkop</li>
+                        <li>perchè dropbox</li>
+                        <li>piani</li>
+                        <li>sicurezza</li>
+                        <li>funzioni</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div id="lingua">
+                <i class="fas fa-globe"></i>
+                <a href="#" id="lingua"> italiano</a>
+            </div>
+        </div>
 
     </footer>
+
+
+</body>
 
 </html>

@@ -2,102 +2,558 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
 }
 
 html{
     font-family: 'Open Sans'
+   
 }
 
-.container{
- margin: 0 auto;
- height: 100%;
- width: 100%;
- }
 
+
+ /*inizio header*/
 
 header{
-    height: 80px;
-    line-height:80px;
-    width: 90%;
+  height: 80px;
+
+}
+#fixed{
+    position: fixed;
+    z-index: 2;
+   
+    width: 100%;
     margin: 0 auto;
+    background-color: white; 
+}
+
+nav{
+    
+    margin: 0 auto;
+    line-height: 80px;
+
+}
+
+nav img{
+    vertical-align: middle;
+}
+
+.menu-1{
+    float: left;
+
+}
+
+.menu-2{
+    float: right;
+    
+}
+header nav  a {
+ color:black;
+ text-decoration: none;
+      
+}
+header nav ul li{
+  display: inline-block;
+    list-style-type: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+    
+.btn{
+    background-color:rgba(0,97,255,255);
+    border-radius: 10;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.btn.btn-header{
+    margin-right: 30px;
+}
+
+/*fine header*/
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/*inizio jumbo*/
+
+.jumbo{
+    background-color:rgba(180, 208, 231, 255);
+    height: 700px;
+    
+}
+
+#jumbotron{
+    width:80%;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+ .jumbo h1{
+    font-size: 75px;
+   padding-top: 40px;
+   font-weight: bold;
+   padding-bottom: 40px;
+}
+ 
+.col-sx{
+float: left;
+width: 35%;
+font-size: 20px;
+}
+
+
+.row .col-sx  p{
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+
+.fas.fa-arrow-down{
+    font-size:50px;
+}
+
+.col-dx img{
+    width: 50%;
+    position: absolute;
+     
+}
+
+
+.col-dx{
+    float: right;
+    width: 60%;
+ 
+   } 
+
+
+/*fine jumbo*/
+
+   
+/*inizio section piani*/
+
+.container-center{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    
+}
+
+#piani{
+ margin-top: 170px;
+
+}
+.title-section{
+    padding-bottom: 55px;
+    font-size: 30px;
+    
+}
+#fatturazione div{
+    
+   display: inline-block;
+   
+}
+#fatturazione {
+    padding-bottom: 20px;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  
+}
+.blue{
+       border: 5px solid blue;  
+}
+
+.black{
+   
+    border: 2px solid black;
+ }
+#col-title{
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    padding:20px;
+}
+
+#piani .col{
+    float: left;
+    width: 30%;
+    border: 1px black solid;
+     
+}
+#col-piano{
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+#costo{
+ margin-bottom: 10px; 
+    
+}
+#mese{
+font-size: 10px;
+color: gray;
+margin-bottom: 30px;
+}
+#col-desc{
+    margin-left: 20px;
+
+}
+
+#col-desc div {
+    line-height: 40px;
+}
+.btn.btn-col{
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+#piani .scelta{
+     padding:20px;
+    
+}
+
+#col-puntisal p{
+    line-height: 30px;
+}
+    
+#col-puntisal{
+    margin-left: 20px;
+    margin-bottom: 100px;
+ 
+}
+#col-puntisal p:before {
+    content: '✓';
+    padding-right: 5px;
+    color:blue
+}
+#col-puntisal h4{
+    padding: 20px 0px;
+ }
+ .col-enterprise{
+    margin-bottom: 50px;
+    margin-top:50px;
+     border: 1px black solid;
+     height: 200px;
+}
+#col-ent1{
+    float: left;
+    width: 75%;
+    margin-left: 20px;
+    line-height: 40px;
+}
+#col-ent2{
+    float: right;
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+/*fine section piani*/
+
+/*inizio section partners*/
+
+
+.col-partners{
+    float: left;
+    width: 50%;  
+}
+
+.col-text{
+    float:right;
+    width: 45%;
+    font-weight: bold;
+    height:500px;
+    
+}
+
+.col-text h2{
+    font-size: 30px;
  
 }
 
-#logo{
-    float: left;
-    width: 10%;
+.col-text p{
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+
+.col-partners img{
+    width: 100%;
+}
+
+.btn-partners{
+    background-color: white;
+    color:black;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: black 1px solid;
     
 }
-#logo img{
-    vertical-align: middle;
-    }
 
-header nav{
+/*fine section partners*/
+
+/*inizio section operazioni*/
+
+.col{
+    width: 30%;
+    float: left;
+}
+
+.col img {
+    width: 100%;
+}
+
+.col-center{
+    margin: 0 5%;
     float: left;
     width: 30%;
 }
 
-header nav  a {
-    color:black;
-    text-decoration: none;
-    padding: 20px;
-    margin-left: 1px;
+.col-center img{
+width: 100%;
+}
+
+#operazioni h3{
+font-size: 30px;
+font-weight: bold;
+}
+
+#operazioni h2{
+font-size: 40px;
+ font-weight: bold;
+ }
+
+ #operazioni p{
+        font-weight: bold;
+ }
+
+ #operazioni .row{
+  margin-bottom: 30px;
+  }
+/*fine section operazioni*/
+
+/*inizio section clienti*/
+.container-clienti{
+    margin: 0 auto;
+    height: 90%;
+    width: 100%;
+
+    }
+
+#clienti h2{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#clienti a{
+    color: rgb(0, 132, 255);
     
 }
-header nav ul li{
-    display: inline-block;
+.col-side{
+float: left;
+height: 30vw;
+width: 30vw;
+
 }
-header nav ul{
-    text-align: left;
+.side-center{
+ float: left;
+ width: calc(100% - 60vw);
+  height: 30vw;
+  background-color: gainsboro;
+  display: table;
 }
 
- #right{
+.quadrato{
     float: left;
+    height: 15vw;
+    line-height:15vw;
+    width: 50%;
+    text-align: center;
+       position: relative;
+}
+.quadrato img{
+      width: 50%;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+     position: absolute;
+
+  }
+
+.quadrato.quadrato-1{
+background-color:#A2D39B;
+
+}
+
+.quadrato.quadrato-2{
+    background-color: #61082B;
+}
+
+.quadrato.quadrato-3{
+    background-color: #0093CE;
+}
+
+.quadrato.quadrato-4{
+    background-color:#FF1C1C;
+}
+.quadrato.quadrato-5{
+    background-color:#D5001F ;
+}
+.quadrato.quadrato-6{
+    background-color:#B4D0E7;
+}
+.quadrato.quadrato-7{
+    background-color:  #0D2481;
+}
+.quadrato.quadrato-8{
+    background-color:#FFD830 ;
+}
+
+.side-center .riga{
+ padding:  50px 50px;
+ height: 100%;
+  line-height: 40px;
+ display: table-cell;
+  vertical-align: middle;
+}
+
+.side-center img{
+    width: 200px;
   
 }
-#login{
-    float: right;
+
+
+/*fine section clienti*/
+
+/*inizia section inizia*/
+
+#inizia{
+  
+    background-color: #B4D0E7;
+
    
-  
 }
 
 
-
-.jumbatron{
-background-color: brown;
-height: 600px;
-
-}
-.container-2{
-    width: 80%;
-    margin: 0 auto;
-}
-.pagina-1{
-    background-color: chartreuse;
-    height: 600px;
-}
-
-.pagina-2{
-    background-color: coral;
-    height: 600px;
-}
-.pagina-3{
-    background-color: darkgreen;
-    height: 600px;
-}
-.quadrati{
-    background-color: darkorchid;
-    height: 600px;
-}
-
-.domande-frequenti{
-    background-color: dimgray;
-    height: 600px;
-}
-
-footer{
-    width: 100%;
+.col-i{
+    float: left;
+    width: 55%;
     height: 200px;
-    background-color: black;
-margin: 0 auto;
+    position:relative;
+   }
+.col-i div{
+   
+    font-size: 40px;
+    color:#61082B;
+    font-weight: bold;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
+.col-inizia{
+    float: right;
+    width: 40%;
+    position:relative;
+    height: 200px;
+    
+}
+
+.btn.btn-inizia{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
+/*FINE SECTION INIZIA*/
+
+/*inzia section faq*/
+
+#faq{
+   
+    margin-top: 50px;
+}
+
+#faq h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#faq ul li{
+  
+    list-style-type: none;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight:bold;
+    padding: 20px;
+ }
+
+/*fin section faq*/
+
+
+/*inizio footer*/
+footer{
+  background-color: black;
+   
+
+}
+
+.container-footer{
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+footer .row{
+    color: white;
+    
+}
+.col-faq{
+    width: 18%;
+    float: left;
+   padding:50px 50px;
+   
+}
+
+footer ul li{
+list-style-type: none;
+line-height: 30px;
+
+    
+}
+#col-titlefaq{
+font-size: 20px;
+font-weight: bold;
+padding:20px 0px;
+}
+
+
+#lingua{
+    color: white;
+ padding-left:10px;
+ 
+}
+
