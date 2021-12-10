@@ -39,17 +39,38 @@ nav img{
 }
 
 .menu-1{
-    float: left;
+ float: left;
+ 
 
 }
+
+.menu-1 ul li:hover,.menu-2 ul li:hover{
+border-bottom: 2px solid black;
+}
+
+.sotto-menu{
+   position: absolute;
+   display: none;
+   background-color: lightsteelblue;
+  width: 300px;
+
+ }
+
+
+ .menu-2 li:hover .sotto-menu{
+     display: block;
+     
+ }
+
+
+.menu-1 li{
+     position: relative;   
+       
+}
+
 
 .menu-2{
     float: right;
-    
-}
-header nav  a {
- color:black;
- text-decoration: none;
       
 }
 header nav ul li{
@@ -59,13 +80,23 @@ header nav ul li{
     padding-right: 30px;
     
 }
-    
+header nav  a {
+ color:black;
+ text-decoration: none;
+}
+
+
 .btn{
     background-color:rgba(0,97,255,255);
     border-radius: 10;
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 20px;
+
+}
+
+.btn:hover{
+    background-color: rgb(186, 195, 204);
 }
 .btn.btn-header{
     margin-right: 30px;
@@ -104,7 +135,7 @@ header nav ul li{
 .col-sx{
 float: left;
 width: 35%;
-font-size: 20px;
+font-size: 15x;
 }
 
 
@@ -116,6 +147,8 @@ font-size: 20px;
 
 .fas.fa-arrow-down{
     font-size:50px;
+    color: black;
+    
 }
 
 .col-dx img{
@@ -183,11 +216,18 @@ font-size: 20px;
     border-bottom: 1px solid black;
     padding:20px;
 }
+#col-title-1{
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    padding:20px;
+}
 
 #piani .col{
     float: left;
     width: 30%;
     border: 1px black solid;
+    height: 800px;
      
 }
 #col-piano{
@@ -209,24 +249,28 @@ margin-bottom: 30px;
 }
 #col-desc{
     margin-left: 20px;
-
+    font-size:13px;
 }
 
 #col-desc div {
     line-height: 40px;
 }
-.btn.btn-col{
-    padding-left: 30px;
-    padding-right: 30px;
-    
-}
-#piani .scelta{
-     padding:20px;
+.btn-col {
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
     
 }
 
+
+#piani .scelta{
+     padding:20px;
+}
+
+
 #col-puntisal p{
     line-height: 30px;
+    font-size: 14px;
 }
     
 #col-puntisal{
@@ -241,6 +285,7 @@ margin-bottom: 30px;
 }
 #col-puntisal h4{
     padding: 20px 0px;
+    font-weight: bold;
  }
  .col-enterprise{
     margin-bottom: 50px;
@@ -260,7 +305,14 @@ margin-bottom: 30px;
     margin-left: 20px;
     margin-top: 20px;
 }
-
+#col-ent2 .btn{
+    background-color:rgba(0,97,255,255);
+    border-radius: 10;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 15px;
+}
 
 
 /*fine section piani*/
@@ -384,15 +436,12 @@ width: 30vw;
     line-height:15vw;
     width: 50%;
     text-align: center;
-       position: relative;
+    
 }
 .quadrato img{
-      width: 50%;
-      top: 50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-     position: absolute;
-
+    width: 50%;
+     vertical-align: middle; 
+     filter: invert();
   }
 
 .quadrato.quadrato-1{
@@ -428,14 +477,20 @@ background-color:#A2D39B;
  padding:  50px 50px;
  height: 100%;
   line-height: 40px;
- display: table-cell;
-  vertical-align: middle;
+  overflow-y: scroll;
 }
 
 .side-center img{
     width: 200px;
+ }
+
+ .riga p {
+     padding: 50px 0px;
+     line-height: 20px;
+     font-weight: bold;
+ }
   
-}
+
 
 
 /*fine section clienti*/
@@ -488,6 +543,12 @@ background-color:#A2D39B;
    padding-right: 30px;
 }
 
+.btn.btn-inizia:hover{
+    background-color: lightslategray;
+}
+    
+
+
 /*FINE SECTION INIZIA*/
 
 /*inzia section faq*/
@@ -503,7 +564,6 @@ background-color:#A2D39B;
 }
 
 #faq ul li{
-  
     list-style-type: none;
     line-height: 50px;
     font-size: 15px;
@@ -511,6 +571,13 @@ background-color:#A2D39B;
     padding: 20px;
  }
 
+ 
+ 
+ 
+  .menu-2 li:hover .sotto-menu{
+      display: block;
+      
+  }
 /*fin section faq*/
 
 
@@ -527,27 +594,29 @@ footer{
     height: 400px;
 }
 
-footer .row{
+footer .row a{
     color: white;
+    text-decoration:none;
     
 }
-.col-faq{
+.col-footer{
     width: 18%;
     float: left;
    padding:50px 50px;
    
 }
 
-footer ul li{
+footer ul li {
 list-style-type: none;
 line-height: 30px;
 
     
 }
-#col-titlefaq{
+#col-titlefooter{
 font-size: 20px;
 font-weight: bold;
 padding:20px 0px;
+color: white;
 }
 
 
@@ -557,3 +626,6 @@ padding:20px 0px;
  
 }
 
+.col-footer ul li:hover{
+text-decoration: underline;
+}
